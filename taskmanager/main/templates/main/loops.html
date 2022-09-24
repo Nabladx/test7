@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+            /*For collapsed boarders*/
+        table, tr, th, td {
+          border: 1px solid black;
+          border-collapse: collapse;
+        }
+    </style>
+</head>
+
+<body>
+    <table>
+        <thead>
+            <tr>
+                <th>Картинка</th>
+                <th>Наименование</th>
+                <th>Материал</th>
+                <th>Вес (граммы)</th>
+                <th>Цена (руб.)</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td><img src="media/pic1.png"/></td>
+                <td>Петля накладная ПН5-40</td>
+                <td>БП</td>
+                <td>6,92</td>
+                <td>100</td>
+                <td><a href="{% url 'generatePDF' %}">PDF file</a></td>
+            </tr>
+<!--            <tr>-->
+<!--                <td>Doe2</td>-->
+<!--                <td>Jane2</td>-->
+<!--            </tr>-->
+        </tbody>
+    </table>
+<!--        <h1>Петля накладная ПН5-40</h1>-->
+</body>
+</html>
